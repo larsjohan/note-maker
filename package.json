@@ -48,6 +48,6 @@
     "versions.json"
   ],
   "lint-staged": {
-    "src/*": "lint:fix"
+    "/src/**/*": "lint:fix"
   }
 }

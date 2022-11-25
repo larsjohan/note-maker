@@ -2,9 +2,8 @@
 	"id": "note-maker",
 	"name": "Note maker",
 	"version": "0.1.0",
-	"minAppVersion": "0.15.0",
+	"minAppVersion": "1.0.3",
 	"description": "This is a plugin for Obsidian (https://obsidian.md) that makes it easy to create new files from templates.",
 	"author": "Lars Johan Nybø",
-	"authorUrl": "https://github.com/larsjohan/note-maker",
 	"isDesktopOnly": false
 }
