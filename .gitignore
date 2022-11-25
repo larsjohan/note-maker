@@ -1,17 +1,12 @@
-
-# Intellij
+# Intellij IDE
 **/*.iml
 .idea/
 
 # npm
-node_modules
+node_modules/
 
-# Don't include the compiled main.js file in the repo.
-# They should be uploaded to GitHub releases instead.
-main.js
-
-# Exclude sourcemaps
-*.map
+# build
+build/
 
 # obsidian
 data.json

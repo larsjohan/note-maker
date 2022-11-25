@@ -1,0 +1,11 @@
+# Intellij IDE
+.idea/
+
+# npm
+node_modules/
+
+# build
+build/
+
+# Exclude macOS Finder (System Explorer) View States
+.DS_Store

@@ -1,35 +1,40 @@
 {
-	"name": "note-maker",
-	"version": "0.1.0",
-	"description": "This is a plugin for Obsidian (https://obsidian.md) that makes it easy to create new files from templates",
-	"repository": {
-		"url": "https://github.com/larsjohan/note-maker"
-	},
-	"main": "main.js",
-	"scripts": {
-		"dev": "node esbuild.config.mjs",
-		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-		"version": "node version-bump.mjs && git add manifest.json versions.json"
-	},
-	"keywords": [
-		"Obsidian",
-		"plugin",
-		"note",
-		"create",
-		"make",
-		"template",
-		"templater"
-	],
-	"author": "Lars Johan Nybø",
-	"license": "MIT",
-	"devDependencies": {
-		"@types/node": "^18.11.9",
-		"@typescript-eslint/eslint-plugin": "5.44.0",
-		"@typescript-eslint/parser": "5.44.0",
-		"builtin-modules": "3.3.0",
-		"esbuild": "0.15.15",
-		"obsidian": "^0.16.3",
-		"tslib": "2.4.1",
-		"typescript": "4.9.3"
-	}
+  "name": "note-maker",
+  "version": "0.1.0",
+  "description": "This is a plugin for Obsidian (https://obsidian.md) that makes it easy to create new files from templates",
+  "repository": {
+    "url": "https://github.com/larsjohan/note-maker"
+  },
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add src/manifest.json versions.json"
+  },
+  "keywords": [
+    "Obsidian",
+    "plugin",
+    "note",
+    "create",
+    "make",
+    "template",
+    "templater"
+  ],
+  "author": "Lars Johan Nybø",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "5.44.0",
+    "@typescript-eslint/parser": "5.44.0",
+    "builtin-modules": "3.3.0",
+    "esbuild": "0.15.15",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "obsidian": "^0.16.3",
+    "prettier": "^2.8.0",
+    "tslib": "2.4.1",
+    "typescript": "4.9.3"
+  }
 }
