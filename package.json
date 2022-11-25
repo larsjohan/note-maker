@@ -1,18 +1,11 @@
 {
   "name": "note-maker",
-  "version": "0.1.0",
   "description": "This is a plugin for Obsidian (https://obsidian.md) that makes it easy to create new files from templates",
+  "version": "0.1.0",
+  "author": "Lars Johan Nybø",
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/larsjohan/note-maker"
-  },
-  "main": "main.js",
-  "scripts": {
-    "dev": "node esbuild.config.mjs",
-    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-    "version": "node version-bump.mjs && git add src/manifest.json versions.json",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
-    "prepare": "husky install"
   },
   "keywords": [
     "Obsidian",
@@ -23,8 +16,15 @@
     "template",
     "templater"
   ],
-  "author": "Lars Johan Nybø",
-  "license": "MIT",
+  "main": "build/main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prepare": "husky install"
+  },
   "devDependencies": {
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "5.44.0",
@@ -42,6 +42,11 @@
     "tslib": "2.4.1",
     "typescript": "4.9.3"
   },
+  "files": [
+    "build/*",
+    "manifest.json",
+    "versions.json"
+  ],
   "lint-staged": {
     "src/*": "lint:fix"
   }

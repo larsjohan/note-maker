@@ -8,3 +8,11 @@ The main features (Planned, not implemented):
 ## Installation
 TBA
 
+## Development
+
+This repo is based on the [Obsidian-sample-plugin](https://github.com/obsidianmd/obsidian-sample-plugin).
+Also check the [Obsidian API documentation](https://github.com/obsidianmd/obsidian-api).
+
+### Releasing a new version
+1. Update `minAppVersion` in `manifest.json` to the earliest version of Obsidian the new release will support.
+2. Run `yarn version patch|minor|major`
