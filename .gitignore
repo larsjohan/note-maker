@@ -7,6 +7,7 @@ node_modules/
 
 # build
 build/
+dev-build/
 
 # obsidian
 data.json

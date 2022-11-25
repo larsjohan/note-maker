@@ -6,6 +6,7 @@ node_modules/
 
 # build
 build/
+dev-build/
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
